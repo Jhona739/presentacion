@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+     font-size: 15px;
+}
+.contenedor,section{
+    width: 100%;
+    padding: 10px;
+}
+section .contenedor-carrusel{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+}
+section .tarjetas-carrusel{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+section .tarjetas-carrusel div{
+    display: flex;
+}
+section .tarjetas-carrusel div img{
+    width: 800px;
+    height: 500px;
+}
+section .carrusel .botones{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+section .carrusel .botones a{
+    color: white;
+    width: 30px;
+    margin-left: 10px;
+    background-color: #000000;
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+    padding: 5px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+section .carrusel .botones a:hover{
+    background-color: rgb(138, 197, 253);
+}
+section .carrusel .botones button{
+     color: white;
+     border: none;
+     font-size: 1rem;
+     display: block;
+     width: 100px;
+     height: 30px;
+     margin-left: 10px;
+     border-radius: 10px;
+     background-color: #000000;
+     cursor: pointer;
+     -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+     -ms-border-radius: 10px;
+     -o-border-radius: 10px;
+}
+section .carrusel button:hover{
+    background-color: rgb(138, 197, 253);
+}
+section .carrusel .glider-dot{
+    width: 30px;
+    height: 6px;
+}
+section .carrusel .glider-dot:hover{
+    background-color: rgb(151, 246, 255);
+}
+section .carrusel .glider-dot.active{
+    background-color: rgb(255, 191, 64);
+}
+@media only screen and (max-width: 900px) {
+    html{
+        font-size: 12px;
+    }
+    section .tarjetas-carrusel div img{
+        width: 1000px;
+        height: 200px;
+    }
+  }
